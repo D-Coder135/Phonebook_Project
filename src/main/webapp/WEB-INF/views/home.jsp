@@ -12,6 +12,10 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/bootstrap.min.css">
 </head>
 <body>
-<h1>Phonebook Application</h1>
+<div class="alert alert-primary">
+    <div class="container">
+        <h1>Phonebook Application</h1>
+    </div>
+</div>
 </body>
 </html>
