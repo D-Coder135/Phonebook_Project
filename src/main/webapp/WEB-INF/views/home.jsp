@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Phonebook Application</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/bootstrap.min.css">
 </head>
 <body>
 <h1>Phonebook Application</h1>
