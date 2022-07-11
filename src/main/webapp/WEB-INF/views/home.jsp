@@ -22,5 +22,9 @@
     <h3>Welcome to our Phonebook Web Application</h3>
     <h5>Powered By Servlets, JSP and MyBatis</h5>
 </div>
+
+<div class="container text-center">
+
+</div>
 </body>
 </html>
