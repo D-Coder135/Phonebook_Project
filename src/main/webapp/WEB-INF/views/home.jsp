@@ -18,7 +18,7 @@
     </div>
 </div>
 
-<div class="container" style="min-height: 450px">
+<div class="container" style="min-height: 550px">
     <h3>Welcome to our Phonebook Web Application</h3>
     <h5>Powered By Servlets, JSP and MyBatis</h5>
 </div>
