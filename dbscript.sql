@@ -18,5 +18,7 @@ create table contacts(
     pincode varchar(10),
     state varchar(50),
     country varchar(50),
+    user_id int,
     created_at datetime,
+    constraint fk_users foreign key (user_id) references users (id)
 );
