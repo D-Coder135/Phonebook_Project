@@ -11,6 +11,6 @@
     <title>Phonebook Application</title>
 </head>
 <body>
-<h1></h1>
+<h1>Phonebook Application</h1>
 </body>
 </html>
