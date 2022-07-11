@@ -5,20 +5,6 @@
     Time: 03:39 PM
     File: home
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Phonebook Application</title>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/bootstrap.min.css">
-</head>
-<body>
-<div class="alert alert-primary">
-    <div class="container">
-        <h1>Phonebook Application</h1>
-    </div>
-</div>
-
-<div class="container" style="min-height: 550px">
     <h3>Welcome to our Phonebook Web Application</h3>
     <h5>Powered By Servlets, JSP and MyBatis</h5>
 </div>
