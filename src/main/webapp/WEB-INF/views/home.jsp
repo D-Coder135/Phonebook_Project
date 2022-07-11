@@ -24,7 +24,7 @@
 </div>
 
 <div class="container text-center">
-
+    &copy; 2022-2023 All rights reserved by <a href="https://d-coder135.github.io/Portfoilio_Project/">De_Coder135</a>
 </div>
 </body>
 </html>
