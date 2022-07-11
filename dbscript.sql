@@ -1,3 +1,6 @@
+drop table contacts if exists;
+drop table users if exists;
+
 create table users (
   id int primary key auto_increment,
   name varchar(50) not null,
