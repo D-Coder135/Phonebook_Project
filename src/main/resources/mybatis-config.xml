@@ -16,6 +16,7 @@
     </environments>
 
     <mappers>
-        <mapper class="com.example.apache_tomcat_demo.dao.CustomerDao" />
+        <mapper class="com.dev.phonebook.dao.ContactDao" />
+        <mapper class="com.dev.phonebook.dao.UserDao" />
     </mappers>
 </configuration>
