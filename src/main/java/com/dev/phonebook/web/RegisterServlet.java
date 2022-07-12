@@ -1,5 +1,6 @@
 package com.dev.phonebook.web;
 
+import com.dev.phonebook.entity.User;
 import com.dev.phonebook.service.UserService;
 
 import javax.servlet.*;
@@ -30,5 +31,6 @@ public class RegisterServlet extends HttpServlet {
         // 2. make use of a model function
         UserService service = new UserService();
         Map<String, String> errors = new HashMap<>();
+        User user = service.registerUser(name, email, password, cPassword, errors);
     }
 }
