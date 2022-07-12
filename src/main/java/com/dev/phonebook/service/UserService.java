@@ -40,6 +40,10 @@ public class UserService {
         if (user != null) {
             errors.put("email", "This email is already registered with us");
         }
+
+        if (errors.size() > 0) {
+            return null;
+        }
         return null;
     }
 
