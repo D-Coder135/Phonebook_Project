@@ -21,5 +21,5 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private Date createdAt;
+    private Date createdAt = new Date();
 }
