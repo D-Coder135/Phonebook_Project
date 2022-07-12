@@ -8,4 +8,7 @@
 package com.dev.phonebook.dao;
 
 public final class DaoFactory {
+
+    private DaoFactory() {
+    }
 }
