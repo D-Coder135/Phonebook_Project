@@ -13,7 +13,7 @@
 <form method="POST">
 
     <div class="form-group row">
-
+        <label for="name" class="col-md-4">Name</label>
     </div>
 </form>
 
