@@ -7,8 +7,11 @@
 
 package com.dev.phonebook.entity;
 
+import lombok.NoArgsConstructor;
+
 import java.util.Date;
 
+@NoArgsConstructor
 public class User {
     private Integer id;
     private String name;
