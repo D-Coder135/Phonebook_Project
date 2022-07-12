@@ -12,6 +12,9 @@
 
 <form method="POST">
 
+    <div class="form-group row">
+
+    </div>
 </form>
 
 <%@ include file="footer.jspf" %>
