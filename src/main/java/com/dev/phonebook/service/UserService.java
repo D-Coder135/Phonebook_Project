@@ -37,6 +37,9 @@ public class UserService {
 
         UserDao dao = DaoFactory.getUserDao();
         User user = dao.getUserByEmail(email);
+        if (user != null) {
+            errors.put("email", "This email is already registered with us");
+        }
         return null;
     }
 
