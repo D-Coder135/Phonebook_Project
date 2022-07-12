@@ -16,6 +16,8 @@ public class UserService {
     public User registerUser(String name, String email, String password, String cPassword, Map<String, String> errors) {
         if (name.trim().length() == 0) {
             errors.put("name", "Name is mandatory");
+        } else if (name.trim().length() < 3) {
+            errors.put("name", "At least 3 letters are required");
         }
         return null;
     }
