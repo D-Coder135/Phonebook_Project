@@ -22,5 +22,7 @@ public class RegisterServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         String cPassword = request.getParameter("c_password");
+
+        // 2. make use of a model function
     }
 }
