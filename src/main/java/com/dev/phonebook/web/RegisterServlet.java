@@ -1,5 +1,7 @@
 package com.dev.phonebook.web;
 
+import com.dev.phonebook.service.UserService;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -24,5 +26,6 @@ public class RegisterServlet extends HttpServlet {
         String cPassword = request.getParameter("c_password");
 
         // 2. make use of a model function
+        UserService service = new UserService();
     }
 }
