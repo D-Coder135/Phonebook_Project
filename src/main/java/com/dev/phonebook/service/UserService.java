@@ -7,5 +7,14 @@
 
 package com.dev.phonebook.service;
 
+import com.dev.phonebook.entity.User;
+
+import java.util.Map;
+
 public class UserService {
+
+    public User registerUser(String name, String email, String password, String cPassword, Map<String, String> errors) {
+
+    }
+
 }
