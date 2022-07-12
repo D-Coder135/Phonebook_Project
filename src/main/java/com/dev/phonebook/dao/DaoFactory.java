@@ -15,4 +15,8 @@ public final class DaoFactory {
     public static UserDao getUserDao() {
         return null;
     }
+
+    public static ContactDao getContactDao() {
+        return null;
+    }
 }
