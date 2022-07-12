@@ -6,6 +6,8 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 @WebServlet(name = "RegisterServlet", value = "/register")
 public class RegisterServlet extends HttpServlet {
@@ -27,5 +29,6 @@ public class RegisterServlet extends HttpServlet {
 
         // 2. make use of a model function
         UserService service = new UserService();
+        Map<String, String> errors = new HashMap<>();
     }
 }
