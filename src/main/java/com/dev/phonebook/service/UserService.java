@@ -19,6 +19,10 @@ public class UserService {
         } else if (name.trim().length() < 3) {
             errors.put("name", "At least 3 letters are required");
         }
+
+        if (email.trim().length() == 0) {
+            errors.put("email", "Email address is mandatory");
+        }
         return null;
     }
 
