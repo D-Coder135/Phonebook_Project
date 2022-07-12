@@ -36,6 +36,7 @@ public class UserService {
         }
 
         UserDao dao = DaoFactory.getUserDao();
+        User user = dao.getUserByEmail(email);
         return null;
     }
 
