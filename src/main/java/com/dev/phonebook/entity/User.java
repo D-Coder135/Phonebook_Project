@@ -7,5 +7,12 @@
 
 package com.dev.phonebook.entity;
 
+import java.util.Date;
+
 public class User {
+    private Integer id;
+    private String name;
+    private String email;
+    private String password;
+    private Date createAt;
 }
