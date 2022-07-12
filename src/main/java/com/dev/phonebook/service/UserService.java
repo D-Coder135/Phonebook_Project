@@ -44,6 +44,8 @@ public class UserService {
         if (errors.size() > 0) {
             return null;
         }
+
+        user = new User(name, email, password);
         return null;
     }
 
