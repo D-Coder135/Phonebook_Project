@@ -21,16 +21,19 @@ public final class DaoFactory {
     }
 
     public static UserDao getUserDao() throws IOException {
-        InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
-        SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
-        SqlSession session = factory.openSession();
+        SqlSession session = getSession();
         return session.getMapper(UserDao.class);
     }
 
-    public static ContactDao getContactDao() throws IOException {
+    private static SqlSession getSession() throws IOException {
         InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
         SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession session = factory.openSession();
+        return session;
+    }
+
+    public static ContactDao getContactDao() throws IOException {
+        SqlSession session = getSession();
         return session.getMapper(ContactDao.class);
     }
 }
