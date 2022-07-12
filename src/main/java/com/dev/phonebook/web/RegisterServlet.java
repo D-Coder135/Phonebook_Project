@@ -11,6 +11,8 @@ public class RegisterServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // TODO: check of login
         // TODO: if the user has already logged in redirect to dashboard
+
+        response.sendRedirect("/WEB-INF/views/register.jsp");
     }
 
     @Override
