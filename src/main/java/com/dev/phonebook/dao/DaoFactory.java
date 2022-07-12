@@ -19,8 +19,8 @@ public final class DaoFactory {
 
     private DaoFactory() {
     }
-    
-    private static SqlSession getSession() throws IOException {
+
+    private static SqlSession createSession() throws IOException {
         InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
         SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession session = factory.openSession();
@@ -28,13 +28,13 @@ public final class DaoFactory {
     }
 
     public static UserDao getUserDao() throws IOException {
-        SqlSession session = getSession();
+        SqlSession session = createSession();
         return session.getMapper(UserDao.class);
     }
 
 
     public static ContactDao getContactDao() throws IOException {
-        SqlSession session = getSession();
+        SqlSession session = createSession();
         return session.getMapper(ContactDao.class);
     }
 }
