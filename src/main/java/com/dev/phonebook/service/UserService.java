@@ -7,6 +7,8 @@
 
 package com.dev.phonebook.service;
 
+import com.dev.phonebook.dao.DaoFactory;
+import com.dev.phonebook.dao.UserDao;
 import com.dev.phonebook.entity.User;
 
 import java.util.Map;
@@ -31,6 +33,8 @@ public class UserService {
         if (!password.equals(cPassword)) {
             errors.put("cPassword", "Passwords do not match");
         }
+
+        UserDao user = DaoFactory.getUserDao();
         return null;
     }
 
