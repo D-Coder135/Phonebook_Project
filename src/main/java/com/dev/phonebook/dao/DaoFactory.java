@@ -33,7 +33,6 @@ public final class DaoFactory {
 
 
     public static ContactDao getContactDao() throws IOException {
-        SqlSession session = createSession();
-        return session.getMapper(ContactDao.class);
+        return createSession().getMapper(ContactDao.class);
     }
 }
