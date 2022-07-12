@@ -7,11 +7,13 @@
 
 package com.dev.phonebook.entity;
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
 @NoArgsConstructor
+@Getter
 public class Contact {
     private Integer id;
     private String firstname;
