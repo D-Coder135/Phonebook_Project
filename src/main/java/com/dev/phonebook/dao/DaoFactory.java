@@ -28,8 +28,7 @@ public final class DaoFactory {
     }
 
     public static UserDao getUserDao() throws IOException {
-        SqlSession session = createSession();
-        return session.getMapper(UserDao.class);
+        return createSession().getMapper(UserDao.class);
     }
 
 
