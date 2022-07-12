@@ -7,4 +7,6 @@
 --%>
 <%@ include file="./header.jspf" %>
 
+<h3>New User Registration Form</h3>
+
 <%@ include file="footer.jspf" %>
