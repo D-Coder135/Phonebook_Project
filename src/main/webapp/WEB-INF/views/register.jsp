@@ -10,4 +10,8 @@
 <h3>New User Registration Form</h3>
 <hr>
 
+<form method="POST">
+
+</form>
+
 <%@ include file="footer.jspf" %>
