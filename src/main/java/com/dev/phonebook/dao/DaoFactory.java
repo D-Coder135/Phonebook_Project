@@ -31,6 +31,6 @@ public final class DaoFactory {
         InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
         SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession session = factory.openSession();
-        return null;
+        return session.getMapper(ContactDao.class);
     }
 }
