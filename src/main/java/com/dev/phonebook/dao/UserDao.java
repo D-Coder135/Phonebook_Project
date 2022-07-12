@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.Select;
 public interface UserDao {
 
     //CRUD
+    public void createUser(User user);
 
     //Queries
     @Select("Select * from users where email = #{email}")
