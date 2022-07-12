@@ -36,6 +36,9 @@ public class RegisterServlet extends HttpServlet {
         if (errors.size() > 0) {
             request.setAttribute("errors", errors);
             request.getRequestDispatcher("/WEB-INF/views/register.jsp").forward(request, response);
+        } else {
+            request.getSession().setAttribute("user", user);
+            response.sendRedirect("./dashboard");
         }
     }
 }
