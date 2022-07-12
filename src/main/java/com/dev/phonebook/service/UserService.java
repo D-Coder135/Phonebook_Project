@@ -27,6 +27,10 @@ public class UserService {
         if (password.trim().length() == 0) {
             errors.put("password", "Password is mandatory");
         }
+
+        if (!password.equals(cPassword)) {
+            errors.put("cPassword", "Passwords do not match");
+        }
         return null;
     }
 
