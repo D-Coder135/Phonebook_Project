@@ -14,6 +14,9 @@ import java.util.Map;
 public class UserService {
 
     public User registerUser(String name, String email, String password, String cPassword, Map<String, String> errors) {
+        if (name.trim().length() == 0) {
+
+        }
         return null;
     }
 
