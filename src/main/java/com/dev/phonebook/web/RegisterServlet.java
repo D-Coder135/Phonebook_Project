@@ -32,5 +32,10 @@ public class RegisterServlet extends HttpServlet {
         UserService service = new UserService();
         Map<String, String> errors = new HashMap<>();
         User user = service.registerUser(name, email, password, cPassword, errors);
+
+        if (errors.size() > 0) {
+            request.setAttribute("errors", errors);
+            request.getRequestDispatcher("/WEB-INF/views/register.jsp").forward(request, response);
+        }
     }
 }
