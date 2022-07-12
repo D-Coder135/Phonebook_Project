@@ -12,7 +12,7 @@ public class RegisterServlet extends HttpServlet {
         // TODO: check of login
         // TODO: if the user has already logged in redirect to dashboard
 
-        response.sendRedirect("/WEB-INF/views/register.jsp");
+        request.getRequestDispatcher("/WEB-INF/views/register.jsp").forward(request, response);
     }
 
     @Override
