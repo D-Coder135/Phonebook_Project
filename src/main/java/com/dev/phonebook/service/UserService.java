@@ -46,6 +46,7 @@ public class UserService {
         }
 
         user = new User(name, email, password);
+        dao.createUser(user);
         return null;
     }
 
