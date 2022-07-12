@@ -7,12 +7,23 @@
 
 package com.dev.phonebook.dao;
 
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+import java.io.IOException;
+import java.io.InputStream;
+
 public final class DaoFactory {
 
     private DaoFactory() {
     }
 
-    public static UserDao getUserDao() {
+    public static UserDao getUserDao() throws IOException {
+        InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+        SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
+        SqlSession session = factory.openSession();
         return null;
     }
 
