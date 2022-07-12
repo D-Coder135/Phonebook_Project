@@ -5,4 +5,6 @@
     Time: 10:34 PM
     File: register
 --%>
+<%@ include file="./header.jspf" %>
 
+<%@ include file="footer.jspf" %>
