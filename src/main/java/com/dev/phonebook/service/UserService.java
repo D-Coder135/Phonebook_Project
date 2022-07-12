@@ -35,7 +35,7 @@ public class UserService {
             errors.put("cPassword", "Passwords do not match");
         }
 
-        UserDao user = DaoFactory.getUserDao();
+        UserDao dao = DaoFactory.getUserDao();
         return null;
     }
 
