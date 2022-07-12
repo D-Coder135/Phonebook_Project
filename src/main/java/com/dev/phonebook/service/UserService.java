@@ -11,11 +11,12 @@ import com.dev.phonebook.dao.DaoFactory;
 import com.dev.phonebook.dao.UserDao;
 import com.dev.phonebook.entity.User;
 
+import java.io.IOException;
 import java.util.Map;
 
 public class UserService {
 
-    public User registerUser(String name, String email, String password, String cPassword, Map<String, String> errors) {
+    public User registerUser(String name, String email, String password, String cPassword, Map<String, String> errors) throws IOException {
         if (name.trim().length() == 0) {
             errors.put("name", "Name is mandatory");
         } else if (name.trim().length() < 3) {
