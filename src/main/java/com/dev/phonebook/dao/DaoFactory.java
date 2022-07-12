@@ -7,5 +7,5 @@
 
 package com.dev.phonebook.dao;
 
-public class DaoFactory {
+public final class DaoFactory {
 }
