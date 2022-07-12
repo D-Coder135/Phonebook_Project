@@ -39,6 +39,14 @@
             <input type="password" class="form-control" name="c_password" id="c_password">
         </div>
     </div>
+
+    <div class="form-group row">
+        <label class="col-md-4"></label>
+        <div class="col-md-8">
+            <button class="btn btn-primary">Register</button>
+            <input type="reset" class="btn btn-link" value="Reset">
+        </div>
+    </div>
 </form>
 
 <%@ include file="footer.jspf" %>
