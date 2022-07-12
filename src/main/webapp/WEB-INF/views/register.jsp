@@ -8,5 +8,6 @@
 <%@ include file="./header.jspf" %>
 
 <h3>New User Registration Form</h3>
+<hr>
 
 <%@ include file="footer.jspf" %>
