@@ -5,3 +5,6 @@
     Time: 03:23 PM
     File: dashboard.jsp
 --%>
+<%@ include file="header.jspf" %>
+
+<%@ include file="footer.jspf" %>
