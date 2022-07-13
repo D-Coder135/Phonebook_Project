@@ -6,5 +6,5 @@
     File: dashboard.jsp
 --%>
 <%@ include file="header.jspf" %>
-<h3></h3>
+<h3>Hello ${sessionScope.user.name}, welcome back!</h3>
 <%@ include file="footer.jspf" %>
