@@ -68,6 +68,9 @@ public class UserService {
             errors.put("email", "Invalid email/password!");
         } else {
             boolean result = BCrypt.checkpw(password, user.getPassword());
+            if (!result) {
+                errors.put("email", "Invalid email/password!");
+            }
         }
 
         return null;
