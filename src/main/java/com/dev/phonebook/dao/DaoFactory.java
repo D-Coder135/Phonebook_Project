@@ -23,7 +23,7 @@ public final class DaoFactory {
     private static SqlSession createSession() throws IOException {
         InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
         SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
-        SqlSession session = factory.openSession();
+        SqlSession session = factory.openSession(true);
         return session;
     }
 
