@@ -53,6 +53,14 @@ public class UserService {
     }
 
     public User login(String email, String password, Map<String, String> errors) {
+        if (email.trim().length() == 0) {
+            errors.put("email", "Email address is mandatory");
+        }
+
+        if (password.trim().length() == 0) {
+            errors.put("password", "Password is mandatory");
+        }
+
         return null;
     }
 }
