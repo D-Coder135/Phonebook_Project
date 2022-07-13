@@ -29,7 +29,7 @@
     <div class="form-group row">
         <label class="col-md-4"></label>
         <div class="col-md-8">
-            <button class="btn btn-primary">Register</button>
+            <button class="btn btn-primary">Login</button>
             <input type="reset" class="btn btn-link" value="Reset">
         </div>
     </div>
