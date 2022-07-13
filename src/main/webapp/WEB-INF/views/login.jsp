@@ -10,7 +10,13 @@
 <hr>
 
 <form method="POST">
-
+    <div class="form-group row">
+        <label for="email" class="col-md-4">Email address</label>
+        <div class="col-md-8">
+            <input type="text" class="form-control" name="email" id="email">
+            <div class="text-danger">${errors.email}</div>
+        </div>
+    </div>
 </form>
 
 <%@include file="footer.jspf" %>
