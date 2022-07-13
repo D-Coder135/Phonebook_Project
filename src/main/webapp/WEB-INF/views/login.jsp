@@ -5,4 +5,6 @@
     Time: 09:17 PM
     File: login
 --%>
+<%@include file="header.jspf" %>
 
+<%@include file="footer.jspf" %>
