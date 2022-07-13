@@ -7,6 +7,8 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 @WebServlet(name = "LoginServlet", value = "/login")
 public class LoginServlet extends HttpServlet {
@@ -27,5 +29,7 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("password");
 
         UserService service = new UserService();
+        Map<String, String> errors = new HashMap<>();
+
     }
 }
