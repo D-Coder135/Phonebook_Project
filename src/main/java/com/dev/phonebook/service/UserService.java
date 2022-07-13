@@ -10,6 +10,7 @@ package com.dev.phonebook.service;
 import com.dev.phonebook.dao.DaoFactory;
 import com.dev.phonebook.dao.UserDao;
 import com.dev.phonebook.entity.User;
+import org.mindrot.jbcrypt.BCrypt;
 
 import java.io.IOException;
 import java.util.Map;
@@ -45,6 +46,7 @@ public class UserService {
             return null;
         }
 
+        password = BCrypt.hashpw(password, BCrypt.gensalt(12));
         user = new User(name, email, password);
         dao.createUser(user);
         return user;
