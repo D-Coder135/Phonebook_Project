@@ -14,8 +14,11 @@ import java.util.Map;
 public class RegisterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO: check of login
-        // TODO: if the user has already logged in redirect to dashboard
+        User user = (User) request.getSession().getAttribute("user");
+        if (user != null) {
+            response.sendRedirect("./dashboard");
+            return;
+        }
 
         request.getRequestDispatcher("/WEB-INF/views/register.jsp").forward(request, response);
     }
