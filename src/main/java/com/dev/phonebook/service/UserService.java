@@ -76,7 +76,6 @@ public class UserService {
         if (errors.size() > 0) {
             return null;
         }
-
-        return null;
+        return user;
     }
 }
