@@ -31,5 +31,11 @@ public class LoginServlet extends HttpServlet {
         UserService service = new UserService();
         Map<String, String> errors = new HashMap<>();
         User user = service.login(email, password, errors);
+
+        if (errors.size() > 0) {
+            req.setAttribute("errors", errors);
+            req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req, resp);
+
+        }
     }
 }
