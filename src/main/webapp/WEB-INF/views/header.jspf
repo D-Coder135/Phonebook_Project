@@ -16,8 +16,12 @@
 
 <div class="container">
     <a href="./">Home</a>
+
+    <c:if test="${sessionScope.user == null}">
     <a href="./register">Register</a>
     <a href="./login">Login</a>
+
+    <c:if test="${sessionScope.user != null}">
     <a href="./logout">Logout</a>
 </div>
 
