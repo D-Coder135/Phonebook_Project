@@ -7,4 +7,5 @@
 --%>
 <%@include file="header.jspf" %>
 <h3>Existing user please login here</h3>
+<hr>
 <%@include file="footer.jspf" %>
