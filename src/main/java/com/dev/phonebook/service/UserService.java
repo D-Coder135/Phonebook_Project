@@ -52,4 +52,7 @@ public class UserService {
         return user;
     }
 
+    public User login(String email, String password, Map<String, String> errors) {
+        return null;
+    }
 }
