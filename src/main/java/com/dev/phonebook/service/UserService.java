@@ -61,6 +61,10 @@ public class UserService {
             errors.put("password", "Password is mandatory");
         }
 
+        if (errors.size() > 0) {
+            return null;
+        }
+
         UserDao dao = DaoFactory.getUserDao();
         User user = dao.getUserByEmail(email);
 
