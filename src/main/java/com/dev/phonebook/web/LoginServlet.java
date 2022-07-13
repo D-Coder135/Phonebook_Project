@@ -16,5 +16,7 @@ public class LoginServlet extends HttpServlet {
             response.sendRedirect("./dashboard");
             return;
         }
+
+        request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
     }
 }
