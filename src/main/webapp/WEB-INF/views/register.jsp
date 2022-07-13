@@ -16,6 +16,7 @@
         <label for="name" class="col-md-4">Name</label>
         <div class="col-md-8">
             <input type="text" class="form-control" name="name" id="name">
+            <div class="text-danger"></div>
         </div>
     </div>
 
