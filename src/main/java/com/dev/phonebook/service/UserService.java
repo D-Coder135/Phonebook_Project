@@ -52,7 +52,7 @@ public class UserService {
         return user;
     }
 
-    public User login(String email, String password, Map<String, String> errors) {
+    public User login(String email, String password, Map<String, String> errors) throws IOException {
         if (email.trim().length() == 0) {
             errors.put("email", "Email address is mandatory");
         }
@@ -60,6 +60,9 @@ public class UserService {
         if (password.trim().length() == 0) {
             errors.put("password", "Password is mandatory");
         }
+
+        UserDao dao = DaoFactory.getUserDao();
+        User user = dao.getUserByEmail(email);
 
         return null;
     }
