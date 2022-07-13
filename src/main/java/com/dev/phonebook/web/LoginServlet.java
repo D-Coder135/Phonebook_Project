@@ -35,7 +35,9 @@ public class LoginServlet extends HttpServlet {
         if (errors.size() > 0) {
             req.setAttribute("errors", errors);
             req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req, resp);
-
+        } else {
+            req.getSession().setAttribute("user", user);
+            resp.sendRedirect("./dashboard");
         }
     }
 }
