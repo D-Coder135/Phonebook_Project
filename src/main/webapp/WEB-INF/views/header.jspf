@@ -15,14 +15,16 @@
 </div>
 
 <div class="container">
-    <a href="./">Home</a>
+    <a href="./">Home</a> |
 
     <c:if test="${sessionScope.user == null}">
-    <a href="./register">Register</a>
+    <a href="./register">Register</a> |
     <a href="./login">Login</a>
+    </c:if>
 
     <c:if test="${sessionScope.user != null}">
     <a href="./logout">Logout</a>
+    </c:if>
 </div>
 
 <br><br>
