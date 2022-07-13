@@ -8,4 +8,9 @@
 <%@include file="header.jspf" %>
 <h3>Existing user please login here</h3>
 <hr>
+
+<form method="POST">
+
+</form>
+
 <%@include file="footer.jspf" %>
