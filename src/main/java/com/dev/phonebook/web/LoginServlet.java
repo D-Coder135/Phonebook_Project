@@ -30,6 +30,6 @@ public class LoginServlet extends HttpServlet {
 
         UserService service = new UserService();
         Map<String, String> errors = new HashMap<>();
-
+        User user = service.login(email, password, errors);
     }
 }
