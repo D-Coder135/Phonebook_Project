@@ -48,7 +48,7 @@ public class AddContactServlet extends HttpServlet {
 
         ContactService service = new ContactService();
         Map<String, String> errors = new HashMap<>();
-        service.addNewContact(c, errors);
+        c = service.addNewContact(c, errors);
 
         if (errors.size() > 0) {
             request.setAttribute("errors", errors);

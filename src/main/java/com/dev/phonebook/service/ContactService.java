@@ -33,7 +33,7 @@ public class ContactService {
         }
 
         if (errors.size() > 0) {
-            return null;
+            return c;
         }
 
         ContactDao dao = DaoFactory.getContactDao();
@@ -48,7 +48,7 @@ public class ContactService {
         }
 
         if (errors.size() > 0) {
-            return null;
+            return c;
         }
 
         dao.createContact(c);
