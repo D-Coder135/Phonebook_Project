@@ -7,6 +7,8 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 @WebServlet(name = "AddContactServlet", value = "/add-contact")
 public class AddContactServlet extends HttpServlet {
@@ -41,5 +43,6 @@ public class AddContactServlet extends HttpServlet {
         c.setCountry(country);
 
         ContactService service = new ContactService();
+        Map<String, String> errors = new HashMap<>();
     }
 }
