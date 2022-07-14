@@ -8,7 +8,7 @@ public interface ContactDao {
     // CRUD
 
     @Insert("insert into contacts (firstname, lastname, email, phone, avatar, address, city, state, pincode, country, user_id, created_at)" +
-            " values (#{firstname}, #{lastname}, #{email}, #{avatar}, #{address}, #{city}, #{state}, #{pincode}, #{country}," +
+            " values (#{firstname}, #{lastname}, #{email}, #{phone}, #{avatar}, #{address}, #{city}, #{state}, #{pincode}, #{country}," +
             " #{userId}, #{createdAt})")
     @Options(useGeneratedKeys = true, keyProperty = "id")
     void createContact(Contact c);
