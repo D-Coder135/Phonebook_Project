@@ -7,7 +7,9 @@
 --%>
 <%@ include file="header.jspf"%>
 
-<h3>OOPS! The page you are looking for does not exist.</h3>
+<h3 class="text-danger">OOPS! The page you are looking for does not exist.</h3>
 <hr>
+
+<img src="./assets/images/page-not-found.jpg" class="img-thumbnail" >
 
 <%@ include file="footer.jspf"%>

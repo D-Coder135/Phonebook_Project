@@ -8,10 +8,10 @@
 
 <%@include file="header.jspf"%>
 
-<h3>Internal server error</h3>
+<h3 class="text-danger">Internal server error</h3>
 <hr>
 
-<p>There was an error while processing your request. Please try after sometime or contact helpdesk</p>
+<p class="text-danger">There was an error while processing your request. Please try after sometime or contact helpdesk!</p>
 
 <%@include file="footer.jspf"%>
 
