@@ -44,5 +44,6 @@ public class AddContactServlet extends HttpServlet {
 
         ContactService service = new ContactService();
         Map<String, String> errors = new HashMap<>();
+        c = service.addNewUser(c, errors);
     }
 }
