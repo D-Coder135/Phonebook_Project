@@ -1,5 +1,6 @@
 package com.dev.phonebook.web;
 
+import com.dev.phonebook.entity.Contact;
 import com.dev.phonebook.service.ContactService;
 
 import javax.servlet.*;
@@ -21,6 +22,7 @@ public class ViewContactServlet extends HttpServlet {
         Integer id = Integer.valueOf(input);
 
         ContactService service = new ContactService();
+        Contact c = service.getContactById(id);
     }
 
     @Override
