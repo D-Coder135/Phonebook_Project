@@ -22,6 +22,10 @@
             <div class="col-md-5">
                 <img class="img-thumbnail" src="${contact.avatar}" >
             </div>
+
+            <div class="col-md-7">
+
+            </div>
         </div>
     </c:otherwise>
 
