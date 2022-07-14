@@ -7,4 +7,6 @@
 --%>
 <%@ include file="header.jspf" %>
 
+<h3>Contact details for id ${param.id}</h3>
+
 <%@ include file="footer.jspf" %>
