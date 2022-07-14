@@ -17,7 +17,11 @@
         <h5 class="text-danger">Sorry, we didn't find any contact with id ${param.id}</h5>
     </c:when>
 
+    <c:otherwise>
+        <div class="row">
 
+        </div>
+    </c:otherwise>
 
 </c:choose>
 
