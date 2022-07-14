@@ -6,4 +6,6 @@ public interface ContactDao {
     Contact getContactByEmail(String email);
 
     Contact getContactByPhone(String phone);
+
+    void createContact(Contact c);
 }
