@@ -17,8 +17,9 @@ public class ContactService {
 
         if (fname.length() == 0) {
             errors.put("firstname", "Firstname is required");
+        } else if (fname.length() < 3) {
+            errors.put("firstname", "At least 3 letters required for firstname");
         }
-
         return null;
     }
 }
