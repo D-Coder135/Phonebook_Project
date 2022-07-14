@@ -37,7 +37,7 @@ public class ContactService {
         }
 
         ContactDao dao = DaoFactory.getContactDao();
-
+        Contact c1 = dao.getContactByEmail(c.getEmail());
         return null;
     }
 }
