@@ -13,7 +13,7 @@
 
     <div class="form-group row">
         <label for="firstname" class="col-md-4">Firstname</label>
-        <div class="col-md-8">
+        <div class="col-md-4">
             <input type="text" class="form-control" name="firstname" id="firstname">
             <div class="text-danger">${errors.firstname}</div>
         </div>
@@ -22,7 +22,7 @@
 
     <div class="form-group row">
         <label for="lastname" class="col-md-4">Lastname</label>
-        <div class="col-md-8">
+        <div class="col-md-4">
             <input type="text" class="form-control" name="lastname" id="lastname">
             <div class="text-danger">${errors.lastname}</div>
         </div>
@@ -40,7 +40,7 @@
 
     <div class="form-group row">
         <label for="phone" class="col-md-4">Phone number</label>
-        <div class="col-md-8">
+        <div class="col-md-4">
             <input type="tel" class="form-control" name="phone" id="phone">
             <div class="text-danger">${errors.phone}</div>
         </div>
@@ -67,7 +67,7 @@
 
     <div class="form-group row">
         <label for="city" class="col-md-4">City</label>
-        <div class="col-md-8">
+        <div class="col-md-4">
             <input type="text" class="form-control" name="city" id="city">
             <div class="text-danger">${errors.city}</div>
         </div>
@@ -76,7 +76,7 @@
 
     <div class="form-group row">
         <label for="state" class="col-md-4">State</label>
-        <div class="col-md-8">
+        <div class="col-md-4">
             <input type="text" class="form-control" name="state" id="state">
             <div class="text-danger">${errors.state}</div>
         </div>
@@ -85,7 +85,7 @@
 
     <div class="form-group row">
         <label for="pincode" class="col-md-4">Pin-code</label>
-        <div class="col-md-8">
+        <div class="col-md-3">
             <input type="text" class="form-control" name="pincode" id="pincode">
             <div class="text-danger">${errors.pincode}</div>
         </div>
@@ -94,12 +94,20 @@
 
     <div class="form-group row">
         <label for="country" class="col-md-4">Country</label>
-        <div class="col-md-8">
+        <div class="col-md-3">
             <input type="text" class="form-control" name="country" id="country">
             <div class="text-danger">${errors.country}</div>
         </div>
     </div>
     <br>
+
+    <div class="form-group row">
+        <label class="col-md-4"></label>
+        <div class="col-md-8">
+            <button class="btn btn-primary">Save details</button>
+            <input type="reset" class="btn btn-link" value="Reset">
+        </div>
+    </div>
 
 </form>
 
