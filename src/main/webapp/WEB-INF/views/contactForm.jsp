@@ -6,5 +6,6 @@
     File: contactForm.jsp
 --%>
 <%@ include file="header.jspf" %>
+<h3>Add new contact details</h3>
 
 <%@ include file="footer.jspf" %>
