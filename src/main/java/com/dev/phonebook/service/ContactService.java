@@ -7,5 +7,12 @@
 
 package com.dev.phonebook.service;
 
+import com.dev.phonebook.entity.Contact;
+
+import java.util.Map;
+
 public class ContactService {
+    public Contact addNewUser(Contact c, Map<String, String> errors) {
+        return null;
+    }
 }
