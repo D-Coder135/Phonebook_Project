@@ -27,5 +27,6 @@ public class LoginCheckFilter implements Filter {
             resp.sendRedirect("./login");
             return;
         }
+        chain.doFilter(request, response);
     }
 }
