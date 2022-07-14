@@ -9,7 +9,7 @@ import java.io.IOException;
 public class ViewContactServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        String input = request.getParameter("id");
     }
 
     @Override
