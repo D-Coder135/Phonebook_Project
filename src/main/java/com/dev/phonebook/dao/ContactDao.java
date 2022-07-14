@@ -4,4 +4,6 @@ import com.dev.phonebook.entity.Contact;
 
 public interface ContactDao {
     Contact getContactByEmail(String email);
+
+    Contact getContactByPhone(String phone);
 }
