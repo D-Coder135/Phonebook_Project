@@ -28,6 +28,10 @@ public class ContactService {
         if (c.getPhone().trim().length() == 0) {
             errors.put("phone", "Phone number is required!");
         }
+
+        if (errors.size() > 0) {
+            return null;
+        }
         return null;
     }
 }
