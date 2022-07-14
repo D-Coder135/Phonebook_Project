@@ -43,6 +43,9 @@ public class ContactService {
         }
 
         c1 = dao.getContactByPhone(c.getPhone());
+        if (c1 != null) {
+            errors.put("phone", "There is already a contact for this phone number");
+        }
         return null;
     }
 }
