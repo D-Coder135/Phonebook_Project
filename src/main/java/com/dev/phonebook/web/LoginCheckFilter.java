@@ -1,5 +1,7 @@
 package com.dev.phonebook.web;
 
+import com.dev.phonebook.entity.User;
+
 import javax.servlet.*;
 import javax.servlet.annotation.*;
 import javax.servlet.http.HttpServletRequest;
@@ -19,5 +21,11 @@ public class LoginCheckFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse resp = (HttpServletResponse) response;
 
+        User user = (User) req.getSession().getAttribute("user");
+
+        if (user == null) {
+            resp.sendRedirect("./login");
+            return;
+        }
     }
 }
