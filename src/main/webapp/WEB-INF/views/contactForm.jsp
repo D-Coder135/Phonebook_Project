@@ -7,5 +7,5 @@
 --%>
 <%@ include file="header.jspf" %>
 <h3>Add new contact details</h3>
-
+<hr>
 <%@ include file="footer.jspf" %>
