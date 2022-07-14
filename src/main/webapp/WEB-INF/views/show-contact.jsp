@@ -7,6 +7,8 @@
 --%>
 <%@ include file="header.jspf" %>
 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <h3>Contact details for id ${param.id}</h3>
 
 <%@ include file="footer.jspf" %>
