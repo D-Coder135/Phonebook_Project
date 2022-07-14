@@ -19,6 +19,7 @@
             <div class="text-danger">${errors.name}</div>
         </div>
     </div>
+    <br>
 
     <div class="form-group row">
         <label for="email" class="col-md-4">Email address</label>
@@ -27,6 +28,7 @@
             <div class="text-danger">${errors.email}</div>
         </div>
     </div>
+    <br>
 
     <div class="form-group row">
         <label for="password" class="col-md-4">Password</label>
@@ -35,6 +37,7 @@
             <div class="text-danger">${errors.password}</div>
         </div>
     </div>
+    <br>
 
     <div class="form-group row">
         <label for="c_password" class="col-md-4">Re-enter password</label>
@@ -43,6 +46,7 @@
             <div class="text-danger">${errors.cPassword}</div>
         </div>
     </div>
+    <br>
 
     <div class="form-group row">
         <label class="col-md-4"></label>
