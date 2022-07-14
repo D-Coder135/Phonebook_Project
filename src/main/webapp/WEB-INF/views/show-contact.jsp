@@ -20,7 +20,7 @@
     <c:otherwise>
         <div class="row">
             <div class="col-md-5">
-                <img class="img-thumbnail" src="${contact.avatar}" >
+                <img class="img-thumbnail" src="${contact.avatar == ' ' ? './assets/images/default-profile.jpg' : contact.avatar}" >
             </div>
 
             <div class="col-md-7">
