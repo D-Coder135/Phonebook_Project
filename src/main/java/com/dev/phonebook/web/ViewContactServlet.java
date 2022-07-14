@@ -15,6 +15,8 @@ public class ViewContactServlet extends HttpServlet {
             response.sendRedirect("./");
             return;
         }
+
+        Integer id = Integer.valueOf(input);
     }
 
     @Override
