@@ -52,6 +52,7 @@ public class AddContactServlet extends HttpServlet {
 
         if (errors.size() > 0) {
             request.setAttribute("errors", errors);
+            request.setAttribute("contact", c);
             request.getRequestDispatcher("/WEB-INF/views/contactForm.jsp").forward(request, response);
         } else {
             response.sendRedirect("./view-contact-details?id=" + c.getId());
