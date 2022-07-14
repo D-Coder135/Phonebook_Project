@@ -14,7 +14,7 @@ public class DashboardServlet extends HttpServlet {
         User user = (User) request.getSession().getAttribute("user");
 
         if (user == null) {
-            response.sendRedirect("./");
+            response.sendRedirect("./login");
             return;
         }
         request.getRequestDispatcher("/WEB-INF/views/dashboard.jsp").forward(request,response);
