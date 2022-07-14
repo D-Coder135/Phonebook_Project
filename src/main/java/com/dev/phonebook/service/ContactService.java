@@ -52,6 +52,6 @@ public class ContactService {
         }
 
         dao.createContact(c);
-        return null;
+        return c;
     }
 }
