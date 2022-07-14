@@ -14,6 +14,10 @@ public interface ContactDao {
     void createContact(Contact c);
 
     @Select("select * from contacts where id = #{id}")
+    @Results({
+            @Result(column = "user_id", property = "userId"),
+            @Result(column = "created_at", property = "createdAt")
+    })
     Contact getContact(Integer id);
 
     // QUERIES
