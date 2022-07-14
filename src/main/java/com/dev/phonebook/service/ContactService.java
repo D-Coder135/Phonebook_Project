@@ -13,6 +13,7 @@ import java.util.Map;
 
 public class ContactService {
     public Contact addNewUser(Contact c, Map<String, String> errors) {
+        String fname = c.getFirstname().trim();
         return null;
     }
 }
