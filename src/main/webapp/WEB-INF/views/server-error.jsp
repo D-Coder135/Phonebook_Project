@@ -5,12 +5,8 @@
     Time: 10:07 PM
     File: server-error
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
 
-</body>
-</html>
+<%@include file="header.jspf"%>
+
+<%@include file="footer.jspf"%>
+
