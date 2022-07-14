@@ -12,4 +12,13 @@
 <h3>Contact details for id ${param.id}</h3>
 <hr>
 
+<c:choose>
+    <c:when test="${requestScope.contact == null}">
+        <h5 class="text-danger">Sorry, we didn't find any contact with id ${param.id}</h5>
+    </c:when>
+
+
+
+</c:choose>
+
 <%@ include file="footer.jspf" %>
