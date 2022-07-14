@@ -45,5 +45,10 @@ public class AddContactServlet extends HttpServlet {
         ContactService service = new ContactService();
         Map<String, String> errors = new HashMap<>();
         c = service.addNewUser(c, errors);
+
+        if (errors.size() > 0) {
+            request.setAttribute("errors", errors);
+            request.getRequestDispatcher("/WEB-INF/views/contactForm.jsp").forward(request, response);
+        }
     }
 }
