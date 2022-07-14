@@ -44,6 +44,7 @@ public class AddContactServlet extends HttpServlet {
         c.setCountry(country);
 
         User user = (User) request.getSession().getAttribute("user");
+        c.setUserId(user.getId());
 
         ContactService service = new ContactService();
         Map<String, String> errors = new HashMap<>();
