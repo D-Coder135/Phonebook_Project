@@ -8,7 +8,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "ViewContactServlet", value = "/ViewContactServlet")
+@WebServlet(name = "ViewContactServlet", value = "/view-contact-details")
 public class ViewContactServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
