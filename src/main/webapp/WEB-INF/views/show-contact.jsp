@@ -24,7 +24,9 @@
             </div>
 
             <div class="col-md-7">
+                <table class="table">
 
+                </table>
             </div>
         </div>
     </c:otherwise>
