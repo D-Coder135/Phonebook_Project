@@ -10,6 +10,7 @@
 <hr>
 
 <form method="POST">
+
     <div class="form-group row">
         <label for="email" class="col-md-4">Email address</label>
         <div class="col-md-8">
@@ -17,7 +18,7 @@
             <div class="text-danger">${errors.email}</div>
         </div>
     </div>
-
+    <br>
     <div class="form-group row">
         <label for="password" class="col-md-4">Password</label>
         <div class="col-md-8">
@@ -25,11 +26,12 @@
             <div class="text-danger">${errors.password}</div>
         </div>
     </div>
-
+    <br>
     <div class="form-group row">
         <label class="col-md-4"></label>
         <div class="col-md-8">
             <button class="btn btn-primary">Login</button>
+
             <input type="reset" class="btn btn-link" value="Reset">
         </div>
     </div>
