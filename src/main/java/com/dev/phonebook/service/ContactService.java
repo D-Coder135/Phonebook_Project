@@ -7,12 +7,15 @@
 
 package com.dev.phonebook.service;
 
+import com.dev.phonebook.dao.ContactDao;
+import com.dev.phonebook.dao.DaoFactory;
 import com.dev.phonebook.entity.Contact;
 
+import java.io.IOException;
 import java.util.Map;
 
 public class ContactService {
-    public Contact addNewUser(Contact c, Map<String, String> errors) {
+    public Contact addNewUser(Contact c, Map<String, String> errors) throws IOException {
         String fname = c.getFirstname().trim();
 
         if (fname.length() == 0) {
@@ -32,6 +35,9 @@ public class ContactService {
         if (errors.size() > 0) {
             return null;
         }
+
+        ContactDao dao = DaoFactory.getContactDao();
+
         return null;
     }
 }
