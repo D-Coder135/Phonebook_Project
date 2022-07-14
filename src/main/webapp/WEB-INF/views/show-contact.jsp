@@ -19,7 +19,9 @@
 
     <c:otherwise>
         <div class="row">
+            <div class="col-md-5">
 
+            </div>
         </div>
     </c:otherwise>
 
