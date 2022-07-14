@@ -54,4 +54,9 @@ public class ContactService {
         dao.createContact(c);
         return c;
     }
+
+    public Contact getContactById(Integer id) {
+
+    }
+
 }
