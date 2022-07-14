@@ -28,5 +28,15 @@ public class AddContactServlet extends HttpServlet {
         String country = request.getParameter("country");
 
         Contact c = new Contact();
+        c.setFirstname(firstname);
+        c.setLastname(lastname);
+        c.setEmail(email);
+        c.setPhone(phone);
+        c.setAvatar(avatar);
+        c.setAddress(address);
+        c.setCity(city);
+        c.setState(state);
+        c.setPincode(pincode);
+        c.setCountry(country);
     }
 }
