@@ -1,6 +1,7 @@
 package com.dev.phonebook.web;
 
 import com.dev.phonebook.entity.Contact;
+import com.dev.phonebook.entity.User;
 import com.dev.phonebook.service.ContactService;
 
 import javax.servlet.*;
@@ -41,6 +42,8 @@ public class AddContactServlet extends HttpServlet {
         c.setState(state);
         c.setPincode(pincode);
         c.setCountry(country);
+
+        User user = (User) request.getSession().getAttribute("user");
 
         ContactService service = new ContactService();
         Map<String, String> errors = new HashMap<>();
