@@ -26,6 +26,51 @@
             <div class="col-md-7">
                 <table class="table">
 
+                    <tr>
+                        <td>Firstname</td>
+                        <td>${contact.firstname}</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lastname</td>
+                        <td>${contact.lastname}</td>
+                    </tr>
+
+                    <tr>
+                        <td>Email address</td>
+                        <td>${contact.email}</td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone number</td>
+                        <td>${contact.phone}</td>
+                    </tr>
+
+                    <tr>
+                        <td>Street address</td>
+                        <td>${contact.address}</td>
+                    </tr>
+
+                    <tr>
+                        <td>City</td>
+                        <td>${contact.city}</td>
+                    </tr>
+
+                    <tr>
+                        <td>State/region/province</td>
+                        <td>${contact.state}</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pin-Code</td>
+                        <td>${contact.pincode}</td>
+                    </tr>
+
+                    <tr>
+                        <td>Country</td>
+                        <td>${contact.country}</td>
+                    </tr>
+
                 </table>
             </div>
         </div>
