@@ -2,6 +2,7 @@ package com.dev.phonebook.dao;
 
 import com.dev.phonebook.entity.Contact;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
 
 public interface ContactDao {
 
@@ -14,6 +15,7 @@ public interface ContactDao {
 
     // QUERIES
 
+    @Select("select * from contacts where email = #{email}")
     Contact getContactByEmail(String email);
 
     Contact getContactByPhone(String phone);
