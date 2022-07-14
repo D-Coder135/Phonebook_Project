@@ -1,6 +1,7 @@
 package com.dev.phonebook.web;
 
 import com.dev.phonebook.entity.Contact;
+import com.dev.phonebook.service.ContactService;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -38,5 +39,7 @@ public class AddContactServlet extends HttpServlet {
         c.setState(state);
         c.setPincode(pincode);
         c.setCountry(country);
+
+        ContactService service = new ContactService();
     }
 }
