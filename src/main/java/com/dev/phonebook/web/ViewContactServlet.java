@@ -23,6 +23,8 @@ public class ViewContactServlet extends HttpServlet {
 
         ContactService service = new ContactService();
         Contact c = service.getContactById(id);
+
+        request.setAttribute("contact", c);
     }
 
     @Override
