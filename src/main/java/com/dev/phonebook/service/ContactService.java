@@ -46,6 +46,10 @@ public class ContactService {
         if (c1 != null) {
             errors.put("phone", "There is already a contact for this phone number");
         }
+
+        if (errors.size() > 0) {
+            return null;
+        }
         return null;
     }
 }
