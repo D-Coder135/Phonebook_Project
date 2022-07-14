@@ -24,6 +24,10 @@ public class ContactService {
         if (c.getEmail().trim().length() == 0) {
             errors.put("email", "Email address is required!");
         }
+
+        if (c.getPhone().trim().length() == 0) {
+            errors.put("phone", "Phone number is required!");
+        }
         return null;
     }
 }
