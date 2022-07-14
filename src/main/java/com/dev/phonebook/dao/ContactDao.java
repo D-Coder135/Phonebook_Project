@@ -1,10 +1,7 @@
 package com.dev.phonebook.dao;
 
 import com.dev.phonebook.entity.Contact;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 public interface ContactDao {
 
@@ -13,6 +10,7 @@ public interface ContactDao {
     @Insert("insert into contacts (firstname, lastname, email, phone, avatar, address, city, state, pincode, country, user_id, created_at)" +
             " values (#{firstname}, #{lastname}, #{email}, #{avatar}, #{address}, #{city}, #{state}, #{pincode}, #{country}," +
             " #{userId}, #{createdAt})")
+    @Options(useGeneratedKeys = true, keyProperty = "id")
     void createContact(Contact c);
 
     // QUERIES
