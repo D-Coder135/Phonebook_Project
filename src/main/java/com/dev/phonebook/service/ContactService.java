@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.Map;
 
 public class ContactService {
-    public Contact addNewUser(Contact c, Map<String, String> errors) throws IOException {
+    public Contact addNewContact(Contact c, Map<String, String> errors) throws IOException {
         String fname = c.getFirstname().trim();
 
         if (fname.length() == 0) {
