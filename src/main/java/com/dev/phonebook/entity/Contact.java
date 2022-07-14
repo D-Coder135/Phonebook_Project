@@ -28,5 +28,6 @@ public class Contact {
     private String state;
     private String country;
     private String pincode;
+    private Integer userId;
     private Date createAt = new Date();
 }
