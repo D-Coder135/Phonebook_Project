@@ -5,4 +5,6 @@
     Time: 02:26 PM
     File: contactForm.jsp
 --%>
+<%@ include file="header.jspf" %>
 
+<%@ include file="footer.jspf" %>
