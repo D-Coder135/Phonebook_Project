@@ -1,5 +1,7 @@
 package com.dev.phonebook.web;
 
+import com.dev.phonebook.entity.Contact;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -24,5 +26,7 @@ public class AddContactServlet extends HttpServlet {
         String state = request.getParameter("state");
         String pincode = request.getParameter("pincode");
         String country = request.getParameter("country");
+
+        Contact c = new Contact();
     }
 }
