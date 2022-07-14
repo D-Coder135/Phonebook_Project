@@ -50,6 +50,8 @@ public class ContactService {
         if (errors.size() > 0) {
             return null;
         }
+
+        dao.createContact(c);
         return null;
     }
 }
