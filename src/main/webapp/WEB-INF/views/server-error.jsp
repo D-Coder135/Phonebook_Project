@@ -7,6 +7,8 @@
 --%>
 
 <%@include file="header.jspf"%>
+
 <h3>Internal server error</h3>
+<hr>
 <%@include file="footer.jspf"%>
 
