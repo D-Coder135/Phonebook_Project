@@ -20,6 +20,10 @@ public class ContactService {
         } else if (fname.length() < 3) {
             errors.put("firstname", "At least 3 letters required for firstname");
         }
+
+        if (c.getEmail().trim().length() == 0) {
+            errors.put("email", "Email address is required!");
+        }
         return null;
     }
 }
