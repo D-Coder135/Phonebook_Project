@@ -13,6 +13,8 @@ public interface ContactDao {
     @Options(useGeneratedKeys = true, keyProperty = "id")
     void createContact(Contact c);
 
+    Contact getContact(Integer id);
+
     // QUERIES
 
     @Select("select * from contacts where email = #{email}")
