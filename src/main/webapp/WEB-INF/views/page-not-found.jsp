@@ -5,12 +5,8 @@
     Time: 10:10 PM
     File: page-not-found
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@ include file="header.jspf"%>
 
-</body>
-</html>
+
+
+<%@ include file="footer.jspf"%>
