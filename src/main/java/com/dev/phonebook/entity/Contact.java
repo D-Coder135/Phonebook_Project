@@ -28,5 +28,5 @@ public class Contact {
     private String state;
     private String country;
     private String pincode;
-    private Date createAt;
+    private Date createAt = new Date();
 }
