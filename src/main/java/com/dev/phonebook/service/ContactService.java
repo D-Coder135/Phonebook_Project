@@ -41,6 +41,8 @@ public class ContactService {
         if (c1 != null) {
             errors.put("email", "There is already a contact for this email");
         }
+
+        c1 = dao.getContactByPhone(c.getPhone());
         return null;
     }
 }
