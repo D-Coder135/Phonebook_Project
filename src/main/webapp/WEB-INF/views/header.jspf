@@ -23,7 +23,8 @@
     </c:if>
 
     <c:if test="${sessionScope.user != null}">
-    <a href="./logout">Logout</a>
+        <a href="./add-contact">Add Contact</a> |
+        <a href="./logout">Logout</a>
     </c:if>
 </div>
 
