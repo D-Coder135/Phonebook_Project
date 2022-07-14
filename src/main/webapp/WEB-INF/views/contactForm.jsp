@@ -8,4 +8,9 @@
 <%@ include file="header.jspf" %>
 <h3>Add new contact details</h3>
 <hr>
+
+<form method="POST">
+
+</form>
+
 <%@ include file="footer.jspf" %>
