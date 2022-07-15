@@ -31,6 +31,11 @@ public interface ContactDao {
     })
     Contact getContactByEmail(String email);
 
+    @Select("select * from contacts")
+    @Results({
+            @Result(column = "user_id", property = "userId"),
+            @Result(column = "created_at", property = "createdAt")
+    })
     List<Contact> getAllContacts();
 
     @Select("select * from contacts where phone = #{phone}")
