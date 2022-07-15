@@ -6,5 +6,5 @@
     File: show-contacts.jsp
 --%>
 <%@include file="header.jspf"%>
-
+<h3>List of all your contacts</h3>
 <%@include file="footer.jspf"%>
