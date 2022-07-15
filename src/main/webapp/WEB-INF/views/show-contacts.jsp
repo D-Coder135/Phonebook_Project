@@ -5,4 +5,6 @@
     Time: 12:48 PM
     File: show-contacts.jsp
 --%>
+<%@include file="header.jspf"%>
 
+<%@include file="footer.jspf"%>
