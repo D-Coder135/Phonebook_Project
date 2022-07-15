@@ -32,6 +32,14 @@ public class EditUpdateContactServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        String input = request.getParameter("id");
+        if (input == null) {
+            response.sendRedirect("./");
+            return;
+        }
+        Integer id = Integer.valueOf(input);
+
         String firstname = request.getParameter("firstname");
         String lastname = request.getParameter("lastname");
         String email = request.getParameter("email");
