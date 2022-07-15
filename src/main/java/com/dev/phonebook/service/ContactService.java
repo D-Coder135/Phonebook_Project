@@ -12,6 +12,7 @@ import com.dev.phonebook.dao.DaoFactory;
 import com.dev.phonebook.entity.Contact;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 public class ContactService {
@@ -60,4 +61,7 @@ public class ContactService {
         return dao.getContact(id);
     }
 
+    public List<Contact> getAllContacts() throws IOException {
+
+    }
 }
