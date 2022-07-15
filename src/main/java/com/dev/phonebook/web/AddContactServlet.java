@@ -15,6 +15,7 @@ import java.util.Map;
 public class AddContactServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("title", "Add a new contact details");
         request.getRequestDispatcher("/WEB-INF/views/contactForm.jsp").forward(request, response);
     }
 
@@ -53,6 +54,7 @@ public class AddContactServlet extends HttpServlet {
         if (errors.size() > 0) {
             request.setAttribute("errors", errors);
             request.setAttribute("contact", c);
+            request.setAttribute("title", "Add a new contact details");
             request.getRequestDispatcher("/WEB-INF/views/contactForm.jsp").forward(request, response);
         } else {
             response.sendRedirect("./view-contact-details?id=" + c.getId());
