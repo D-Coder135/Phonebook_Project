@@ -25,7 +25,7 @@ public class ViewContactServlet extends HttpServlet {
         User user = (User) request.getSession().getAttribute("user");
 
         ContactService service = new ContactService();
-        Contact c = service.getContactById(id);
+        Contact c = service.getContactById(id, user.getId());
 
         request.setAttribute("contact", c);
         request.getRequestDispatcher("/WEB-INF/views/show-contact.jsp").forward(request, response);
