@@ -12,6 +12,7 @@ public class ViewAllContactsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ContactService service = new ContactService();
+        request.setAttribute("contacts", service.getAllContacts());
     }
 
     @Override
