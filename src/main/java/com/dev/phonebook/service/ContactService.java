@@ -62,6 +62,6 @@ public class ContactService {
     }
 
     public List<Contact> getAllContacts() throws IOException {
-
+        return DaoFactory.getContactDao().getAllContacts();
     }
 }
