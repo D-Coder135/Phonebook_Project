@@ -31,7 +31,7 @@ public interface ContactDao {
     })
     Contact getContactByEmail(String email);
 
-    @Select("select * from contacts")
+    @Select("select * from contacts where user_id = #{userId}")
     @Results({
             @Result(column = "user_id", property = "userId"),
             @Result(column = "created_at", property = "createdAt")
