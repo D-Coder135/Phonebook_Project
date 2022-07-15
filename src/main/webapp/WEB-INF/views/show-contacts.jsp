@@ -19,7 +19,7 @@
             <div class="card-body">
                 <h5 class="card-title">${c.firstname} ${c.lastname}</h5>
                 <p class="card-text">${c.city} ${c.state}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="./view-contact-details?id=${c.id}" class="btn btn-link">View details</a>
             </div>
         </div>
     </c:forEach>
