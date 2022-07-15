@@ -20,7 +20,7 @@ public interface ContactDao {
             @Result(column = "user_id", property = "userId"),
             @Result(column = "created_at", property = "createdAt")
     })
-    Contact getContact(Integer id);
+    Contact getContact(Integer id, Integer userId);
 
     // QUERIES
 
