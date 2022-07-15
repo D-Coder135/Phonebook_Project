@@ -56,7 +56,7 @@ public class ContactService {
         return c;
     }
 
-    public Contact getContactById(Integer id) throws IOException {
+    public Contact getContactById(Integer id, Integer userId) throws IOException {
         return DaoFactory.getContactDao().getContact(id);
     }
 
