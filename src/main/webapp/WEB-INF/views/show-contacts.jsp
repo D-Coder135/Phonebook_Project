@@ -12,4 +12,8 @@
 <h3>List of all your contacts</h3>
 <hr>
 
+<div class="row">
+
+</div>
+
 <%@include file="footer.jspf"%>
