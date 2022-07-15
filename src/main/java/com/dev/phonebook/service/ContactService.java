@@ -57,7 +57,7 @@ public class ContactService {
     }
 
     public void updateContact(Integer id, Contact c,  Map<String, String> errors) {
-
+        c.setId(id);
     }
 
     public Contact getContactById(Integer id, Integer userId) throws IOException {
