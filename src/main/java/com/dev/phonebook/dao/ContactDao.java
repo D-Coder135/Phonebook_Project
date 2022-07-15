@@ -22,6 +22,9 @@ public interface ContactDao {
     })
     Contact getContact(@Param("id") Integer id, @Param("userId") Integer userId);
 
+    @Update("update contacts set firstname=#{firstname}, lastname=#{lastname}, email=#{email}, phone=#{phone}, " +
+            "avatar=#{avatar}, address=#{address}, city=#{city}, state=#{state}, pincode=#{pincode}, country=#{country}, " +
+            "user_id=#{userId} where id = #{id}")
     void updateContact(Contact c);
 
     // QUERIES
