@@ -23,6 +23,7 @@ public class EditUpdateContactServlet extends HttpServlet {
         User user = (User) request.getSession().getAttribute("user");
 
         Contact contact = service.getContactById(id, user.getId());
+        request.setAttribute("contact", contact);
     }
 
     @Override
