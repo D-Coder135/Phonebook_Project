@@ -27,6 +27,7 @@ public class EditUpdateContactServlet extends HttpServlet {
         Contact contact = service.getContactById(id, user.getId());
         request.setAttribute("contact", contact);
 
+        request.setAttribute("title", "Edit contact details");
         request.getRequestDispatcher("/WEB-INF/views/contactForm.jsp").forward(request, response);
     }
 
