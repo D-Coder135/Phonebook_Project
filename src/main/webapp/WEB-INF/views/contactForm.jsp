@@ -6,7 +6,7 @@
     File: contactForm.jsp
 --%>
 <%@ include file="header.jspf" %>
-<h3>${title ? title : 'Contact Form'}</h3>
+<h3>${title != null ? title : 'Contact Form'}</h3>
 <hr>
 
 <form method="POST">
