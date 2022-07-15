@@ -24,6 +24,7 @@
 
     <c:if test="${sessionScope.user != null}">
         <a href="./add-contact">Add Contact</a> |
+        <a href="./view-all-contacts">View all contacts</a> |
         <a href="./logout">Logout</a>
     </c:if>
 </div>
