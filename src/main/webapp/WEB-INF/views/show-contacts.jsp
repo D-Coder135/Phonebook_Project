@@ -13,7 +13,9 @@
 <hr>
 
 <div class="row">
+    <c:forEach items="${requestScope.contacts}" var="c">
 
+    </c:forEach>
 </div>
 
 <%@include file="footer.jspf"%>
