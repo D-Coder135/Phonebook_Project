@@ -3,6 +3,8 @@ package com.dev.phonebook.dao;
 import com.dev.phonebook.entity.Contact;
 import org.apache.ibatis.annotations.*;
 
+import java.util.List;
+
 public interface ContactDao {
 
     // CRUD
@@ -28,6 +30,8 @@ public interface ContactDao {
             @Result(column = "created_at", property = "createdAt")
     })
     Contact getContactByEmail(String email);
+
+    List<Contact> getAllContacts();
 
     @Select("select * from contacts where phone = #{phone}")
     @Results({
