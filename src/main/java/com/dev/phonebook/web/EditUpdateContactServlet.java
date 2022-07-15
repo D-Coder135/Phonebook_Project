@@ -43,6 +43,7 @@ public class EditUpdateContactServlet extends HttpServlet {
 
 
 
+        Contact c = (Contact) request.getAttribute("contact");
         User user = (User) request.getSession().getAttribute("user");
         c.setUserId(user.getId());
 
