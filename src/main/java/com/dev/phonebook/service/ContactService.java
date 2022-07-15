@@ -58,6 +58,26 @@ public class ContactService {
 
     public void updateContact(Integer id, Contact c,  Map<String, String> errors) {
         c.setId(id);
+
+        String fname = c.getFirstname().trim();
+
+        if (fname.length() == 0) {
+            errors.put("firstname", "Firstname is required");
+        } else if (fname.length() < 3) {
+            errors.put("firstname", "At least 3 letters required for firstname");
+        }
+
+        if (c.getEmail().trim().length() == 0) {
+            errors.put("email", "Email address is required!");
+        }
+
+        if (c.getPhone().trim().length() == 0) {
+            errors.put("phone", "Phone number is required!");
+        }
+
+        if (errors.size() > 0) {
+            return;
+        }
     }
 
     public Contact getContactById(Integer id, Integer userId) throws IOException {
