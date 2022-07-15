@@ -7,4 +7,5 @@
 --%>
 <%@include file="header.jspf"%>
 <h3>List of all your contacts</h3>
+<hr>
 <%@include file="footer.jspf"%>
