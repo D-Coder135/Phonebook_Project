@@ -72,6 +72,7 @@
                     </tr>
 
                 </table>
+                <a href="./edit-and-update-contact" class="btn btn-primary">Edit details</a>
             </div>
         </div>
     </c:otherwise>
