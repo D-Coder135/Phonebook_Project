@@ -79,6 +79,7 @@ public class ContactService {
             return;
         }
         ContactDao dao = DaoFactory.getContactDao();
+        dao.updateContact(c);
     }
 
     public Contact getContactById(Integer id, Integer userId) throws IOException {
