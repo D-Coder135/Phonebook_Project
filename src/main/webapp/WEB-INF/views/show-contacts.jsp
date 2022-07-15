@@ -14,7 +14,14 @@
 
 <div class="row">
     <c:forEach items="${requestScope.contacts}" var="c">
-
+        <div class="card col-md-4">
+            <img src="${c.avatar==''?'./assets/images/default-profile.jpeg': c.avatar}" class="card-img-top" alt="${c.firstname} ${c.lastname}">
+            <div class="card-body">
+                <h5 class="card-title">${c.firstname} ${c.lastname}</h5>
+                <p class="card-text">${c.city} ${c.state}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
     </c:forEach>
 </div>
 
