@@ -44,6 +44,7 @@ public class RequestToContactFilter implements Filter {
         c.setPincode(pincode);
         c.setCountry(country);
 
-        chain.doFilter(request, response);
+        req.setAttribute("contact", c);
+        chain.doFilter(req, resp);
     }
 }
