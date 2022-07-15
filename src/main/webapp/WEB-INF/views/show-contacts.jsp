@@ -6,6 +6,10 @@
     File: show-contacts.jsp
 --%>
 <%@include file="header.jspf"%>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <h3>List of all your contacts</h3>
 <hr>
+
 <%@include file="footer.jspf"%>
