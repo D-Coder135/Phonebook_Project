@@ -22,6 +22,8 @@ public interface ContactDao {
     })
     Contact getContact(@Param("id") Integer id, @Param("userId") Integer userId);
 
+    void updateContact(Contact c);
+
     // QUERIES
 
     @Select("select * from contacts where email = #{email}")
