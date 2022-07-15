@@ -15,7 +15,7 @@ public interface ContactDao {
     @Options(useGeneratedKeys = true, keyProperty = "id")
     void createContact(Contact c);
 
-    @Select("select * from contacts where id = #{id}")
+    @Select("select * from contacts where id = #{id} and user_id=#{userId}")
     @Results({
             @Result(column = "user_id", property = "userId"),
             @Result(column = "created_at", property = "createdAt")
