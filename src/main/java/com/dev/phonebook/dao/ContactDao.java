@@ -36,7 +36,7 @@ public interface ContactDao {
             @Result(column = "user_id", property = "userId"),
             @Result(column = "created_at", property = "createdAt")
     })
-    List<Contact> getAllContacts();
+    List<Contact> getAllContacts(Integer userId);
 
     @Select("select * from contacts where phone = #{phone}")
     @Results({
