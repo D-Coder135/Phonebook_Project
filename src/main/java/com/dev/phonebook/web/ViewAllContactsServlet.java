@@ -13,6 +13,7 @@ public class ViewAllContactsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ContactService service = new ContactService();
         request.setAttribute("contacts", service.getAllContacts());
+        request.getRequestDispatcher("/WEB-INF/views/show-contacts.jsp").forward(request, response);
     }
 
     @Override
