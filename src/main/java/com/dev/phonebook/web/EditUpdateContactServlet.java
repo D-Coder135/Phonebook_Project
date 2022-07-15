@@ -1,5 +1,6 @@
 package com.dev.phonebook.web;
 
+import com.dev.phonebook.entity.User;
 import com.dev.phonebook.service.ContactService;
 
 import javax.servlet.*;
@@ -18,6 +19,7 @@ public class EditUpdateContactServlet extends HttpServlet {
         }
         Integer id = Integer.valueOf(input);
         ContactService service = new ContactService();
+        User user = (User) request.getSession().getAttribute("user");
     }
 
     @Override
