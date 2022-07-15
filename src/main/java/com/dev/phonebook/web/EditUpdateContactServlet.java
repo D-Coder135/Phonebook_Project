@@ -68,5 +68,6 @@ public class EditUpdateContactServlet extends HttpServlet {
 
         ContactService service = new ContactService();
         Map<String, String> errors = new HashMap<>();
+        service.updateContact(id, c, errors);
     }
 }
