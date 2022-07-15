@@ -14,6 +14,7 @@ public class EditUpdateContactServlet extends HttpServlet {
             response.sendRedirect("./");
             return;
         }
+        Integer id = Integer.valueOf(input);
     }
 
     @Override
