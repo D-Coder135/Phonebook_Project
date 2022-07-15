@@ -56,7 +56,7 @@ public class ContactService {
         return c;
     }
 
-    public void updateContact(Integer id, Contact c,  Map<String, String> errors) {
+    public void updateContact(Integer id, Contact c,  Map<String, String> errors) throws IOException {
         c.setId(id);
 
         String fname = c.getFirstname().trim();
@@ -78,6 +78,7 @@ public class ContactService {
         if (errors.size() > 0) {
             return;
         }
+        ContactDao dao = DaoFactory.getContactDao();
     }
 
     public Contact getContactById(Integer id, Integer userId) throws IOException {
