@@ -21,30 +21,33 @@ public class RequestToContactFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse resp = (HttpServletResponse) response;
 
-        String firstname = request.getParameter("firstname");
-        String lastname = request.getParameter("lastname");
-        String email = request.getParameter("email");
-        String phone = request.getParameter("phone");
-        String avatar = request.getParameter("avatar");
-        String address = request.getParameter("address");
-        String city = request.getParameter("city");
-        String state = request.getParameter("state");
-        String pincode = request.getParameter("pincode");
-        String country = request.getParameter("country");
+        if (req.getMethod().equalsIgnoreCase("POST")) {
 
-        Contact c = new Contact();
-        c.setFirstname(firstname);
-        c.setLastname(lastname);
-        c.setEmail(email);
-        c.setPhone(phone);
-        c.setAvatar(avatar);
-        c.setAddress(address);
-        c.setCity(city);
-        c.setState(state);
-        c.setPincode(pincode);
-        c.setCountry(country);
+            String firstname = request.getParameter("firstname");
+            String lastname = request.getParameter("lastname");
+            String email = request.getParameter("email");
+            String phone = request.getParameter("phone");
+            String avatar = request.getParameter("avatar");
+            String address = request.getParameter("address");
+            String city = request.getParameter("city");
+            String state = request.getParameter("state");
+            String pincode = request.getParameter("pincode");
+            String country = request.getParameter("country");
 
-        req.setAttribute("contact", c);
+            Contact c = new Contact();
+            c.setFirstname(firstname);
+            c.setLastname(lastname);
+            c.setEmail(email);
+            c.setPhone(phone);
+            c.setAvatar(avatar);
+            c.setAddress(address);
+            c.setCity(city);
+            c.setState(state);
+            c.setPincode(pincode);
+            c.setCountry(country);
+
+            req.setAttribute("contact", c);
+        }
         chain.doFilter(req, resp);
     }
 }
