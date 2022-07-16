@@ -6,5 +6,5 @@
     File: confirm-delete-contact.jsp
 --%>
 <%@include file="header.jspf"%>
-
+<h3 class="text-danger">Confirm Deletion</h3>
 <%@include file="footer.jspf"%>
