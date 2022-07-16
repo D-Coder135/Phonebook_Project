@@ -90,7 +90,7 @@ public class ContactService {
         return DaoFactory.getContactDao().getAllContacts(userId);
     }
 
-    public void deleteContactById(Integer id, Integer userId, Map<String, String> errors) {
+    public void deleteContactById(Integer id, Integer userId, Map<String, String> errors) throws IOException {
         ContactDao dao = DaoFactory.getContactDao();
     }
 }
