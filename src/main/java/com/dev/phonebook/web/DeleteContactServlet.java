@@ -1,6 +1,8 @@
 package com.dev.phonebook.web;
 
+import com.dev.phonebook.entity.Contact;
 import com.dev.phonebook.entity.User;
+import com.dev.phonebook.service.ContactService;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -19,6 +21,8 @@ public class DeleteContactServlet extends HttpServlet {
 
         Integer id = Integer.valueOf(input);
         User user = (User) request.getSession().getAttribute("user");
+
+        Contact c1 = new ContactService().getContactById(id, user.getId());
     }
 
     @Override
