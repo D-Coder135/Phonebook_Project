@@ -18,6 +18,8 @@ public class ChangeThemeServlet extends HttpServlet {
             theme = "yeti";
         }
 
+        Cookie c1 = new Cookie("theme", theme);
+
     }
 
     @Override
