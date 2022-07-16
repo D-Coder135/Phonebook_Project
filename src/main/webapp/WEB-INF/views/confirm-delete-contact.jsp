@@ -73,6 +73,7 @@
             </table>
 
             <p>This is going to permanently delete the record from our database, and cannot be undone!</p>
+            <p>If you're sure, then type "PERMANENTLY DELETE" in the text box provided below.</p>
         </div>
     </div>
 </c:if>
