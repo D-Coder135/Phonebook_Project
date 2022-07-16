@@ -40,6 +40,7 @@ public class DeleteContactServlet extends HttpServlet {
         if (!confirm.equals("PERMANENTLY DELETE")) {
             Contact c1 = service.getContactById(id, user.getId());
             request.setAttribute("contact", c1);
+            request.setAttribute("errMessage", "You have to type PERMANENTLY DELETE to confirm deletion!");
             request.getRequestDispatcher("/WEB-INF/views/confirm-delete-contact.jsp").forward(request, response);
         } else {
             Map<String, String> errors = new HashMap<>();
