@@ -27,6 +27,7 @@ public interface ContactDao {
             "user_id=#{userId} where id = #{id}")
     void updateContact(Contact c);
 
+    @Delete("delete from contacts where id = #{id}")
     void deleteContact(Integer id);
 
     // QUERIES
