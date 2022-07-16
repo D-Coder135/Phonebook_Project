@@ -8,6 +8,8 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 @WebServlet(name = "DeleteContactServlet", value = "/delete-contact")
 public class DeleteContactServlet extends HttpServlet {
@@ -39,6 +41,15 @@ public class DeleteContactServlet extends HttpServlet {
             Contact c1 = service.getContactById(id, user.getId());
             request.setAttribute("contact", c1);
             request.getRequestDispatcher("/WEB-INF/views/confirm-delete-contact.jsp").forward(request, response);
+        } else {
+            Map<String, String> errors = new HashMap<>();
+            service.deleteContactById(id, user.getId(), errors);
+            if (errors.size() == 0) {
+                response.sendRedirect("./");
+            } else {
+                request.setAttribute("errors", errors);
+                request.getRequestDispatcher("/WEB-INF/views/confirm-delete-contact.jsp").forward(request, response);
+            }
         }
     }
 }
