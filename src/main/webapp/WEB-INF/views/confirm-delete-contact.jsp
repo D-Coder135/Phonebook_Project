@@ -77,6 +77,7 @@
             <form method="POST">
                 <input type="hidden" name="id" value="${contact.id}">
                 <div class="form-group row">
+                    <input type="text" class="col-md-4" name="confirm">
 
                 </div>
             </form>
