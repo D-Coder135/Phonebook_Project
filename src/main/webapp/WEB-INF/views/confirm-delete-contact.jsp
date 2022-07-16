@@ -7,4 +7,5 @@
 --%>
 <%@include file="header.jspf"%>
 <h3 class="text-danger">Confirm Deletion</h3>
+<hr>
 <%@include file="footer.jspf"%>
