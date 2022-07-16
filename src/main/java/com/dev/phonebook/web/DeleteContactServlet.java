@@ -31,5 +31,7 @@ public class DeleteContactServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Integer id = Integer.valueOf(request.getParameter("id"));
         String confirm = request.getParameter("confirm");
+
+        User user = (User) request.getSession().getAttribute("user");
     }
 }
