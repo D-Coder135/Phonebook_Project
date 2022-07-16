@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "DeleteContactServlet", value = "/DeleteContactServlet")
+@WebServlet(name = "DeleteContactServlet", value = "/delete-contact")
 public class DeleteContactServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
