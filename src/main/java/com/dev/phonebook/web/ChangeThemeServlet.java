@@ -21,6 +21,7 @@ public class ChangeThemeServlet extends HttpServlet {
         Cookie c1 = new Cookie("theme", theme);
         c1.setMaxAge(365 * 24 * 60 * 60);
         response.addCookie(c1);
+        response.sendRedirect("./");
 
     }
 
