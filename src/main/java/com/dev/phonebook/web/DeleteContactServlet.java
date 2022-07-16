@@ -33,5 +33,6 @@ public class DeleteContactServlet extends HttpServlet {
         String confirm = request.getParameter("confirm");
 
         User user = (User) request.getSession().getAttribute("user");
+        ContactService service = new ContactService();
     }
 }
