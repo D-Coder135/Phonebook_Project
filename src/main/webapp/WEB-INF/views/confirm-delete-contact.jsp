@@ -78,7 +78,7 @@
                 <input type="hidden" name="id" value="${contact.id}">
                 <div class="form-group row">
                     <input type="text" class="col-md-4" name="confirm">
-
+                    <button class="btn btn-danger col-md-3">Delete!</button>
                 </div>
             </form>
         </div>
