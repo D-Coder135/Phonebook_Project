@@ -76,6 +76,9 @@
             <p>If you're sure, then type "PERMANENTLY DELETE" in the text box provided below.</p>
             <form method="POST">
                 <input type="hidden" name="id" value="${contact.id}">
+                <div class="form-group row">
+
+                </div>
             </form>
         </div>
     </div>
