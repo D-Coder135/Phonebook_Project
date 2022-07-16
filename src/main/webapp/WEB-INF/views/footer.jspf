@@ -4,11 +4,11 @@
 
     <div>
         Change theme:
-        <a href="./theme?name=yeti">Yeti</a> |
-        <a href="./theme?name=united">United</a> |
-        <a href="./theme?name=pulse">Pulse</a> |
-        <a href="./theme?name=dark">Dark</a> |
-        <a href="./theme?name=cyborg">Cyborg</a>
+        <a class="btn btn-${cookie.theme.value == 'yeti' ? 'primary' : 'link'}" href="./theme?name=yeti">Yeti</a> |
+        <a class="btn btn-${cookie.theme.value == 'united' ? 'primary' : 'link'}" href="./theme?name=united">United</a> |
+        <a class="btn btn-${cookie.theme.value == 'pulse' ? 'primary' : 'link'}" href="./theme?name=pulse">Pulse</a> |
+        <a class="btn btn-${cookie.theme.value == 'dark' ? 'primary' : 'link'}" href="./theme?name=dark">Dark</a> |
+        <a class="btn btn-${cookie.theme.value == 'cyborg' ? 'primary' : 'link'}" href="./theme?name=cyborg">Cyborg</a>
     </div>
 
     &copy; 2022-2023 All rights reserved by <a href="https://d-coder135.github.io/Portfoilio_Project/">De_Coder135</a>
