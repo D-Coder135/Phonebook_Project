@@ -34,5 +34,11 @@ public class DeleteContactServlet extends HttpServlet {
 
         User user = (User) request.getSession().getAttribute("user");
         ContactService service = new ContactService();
+
+        if (!confirm.equals("PERMANENTLY DELETE")) {
+            Contact c1 = service.getContactById(id, user.getId());
+            request.setAttribute("contact", c1);
+            request.getRequestDispatcher("/WEB-INF/views/confirm-delete-contact.jsp").forward(request, response);
+        }
     }
 }
