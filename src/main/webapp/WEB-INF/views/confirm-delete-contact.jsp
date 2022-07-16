@@ -16,4 +16,8 @@
     <h5>The id supplied is either invalid or the contact does not belong to your phonebook!</h5>
 </c:if>
 
+<c:if test="${contact != null}">
+
+</c:if>
+
 <%@include file="footer.jspf"%>
