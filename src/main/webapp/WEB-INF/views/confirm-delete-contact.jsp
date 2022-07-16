@@ -80,6 +80,7 @@
                     <input type="text" class="col-md-4" name="confirm">
                     <button class="btn btn-danger col-md-3">Delete!</button>
                 </div>
+                <h5 class="text-danger">${errMessage}</h5>
             </form>
         </div>
     </div>
