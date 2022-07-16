@@ -6,6 +6,9 @@
     File: confirm-delete-contact.jsp
 --%>
 <%@include file="header.jspf"%>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <h3 class="text-danger">Confirm Deletion</h3>
 <hr>
 <%@include file="footer.jspf"%>
