@@ -93,5 +93,10 @@ public class ContactService {
     public void deleteContactById(Integer id, Integer userId, Map<String, String> errors) throws IOException {
         ContactDao dao = DaoFactory.getContactDao();
         Contact c1 = dao.getContact(id, userId);
+
+        if (c1 == null) {
+            errors.put("userId", "Permission denied for deleting this contact");
+            return;
+        }
     }
 }
