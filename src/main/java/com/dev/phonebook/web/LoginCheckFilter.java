@@ -8,7 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(filterName = "LoginCheckFilter", urlPatterns = {"/dashboard", "/add-contact", "/view-contact-details", "/view-all-contacts", "/edit-and-update-contact"})
+@WebFilter(filterName = "LoginCheckFilter", urlPatterns = {"/dashboard", "/add-contact", "/view-contact-details",
+        "/view-all-contacts", "/edit-and-update-contact", "/delete-contact"})
 public class LoginCheckFilter implements Filter {
     public void init(FilterConfig config) throws ServletException {
     }
