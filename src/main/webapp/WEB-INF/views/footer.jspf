@@ -3,6 +3,7 @@
 <div class="container text-center">
 
     <div>
+        Change theme:
         <a href="./theme?name=yeti">Yeti</a> |
         <a href="./theme?name=united">United</a> |
         <a href="./theme?name=pulse">Pulse</a> |
