@@ -89,4 +89,8 @@ public class ContactService {
     public List<Contact> getAllContacts(Integer userId) throws IOException {
         return DaoFactory.getContactDao().getAllContacts(userId);
     }
+
+    public void deleteContactById(Integer id, Integer userId, Map<String, String> errors) {
+
+    }
 }
