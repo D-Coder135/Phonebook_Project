@@ -13,6 +13,11 @@ public class ChangeThemeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String theme = request.getParameter("name");
         List<String> list = Arrays.asList("yeti", "united", "dark", "pulse", "cyborg");
+
+        if (!list.contains(theme)) {
+            theme = "yeti";
+        }
+
     }
 
     @Override
