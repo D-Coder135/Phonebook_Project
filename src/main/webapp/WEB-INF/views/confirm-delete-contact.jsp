@@ -5,12 +5,6 @@
     Time: 09:33 PM
     File: confirm-delete-contact.jsp
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@include file="header.jspf"%>
 
-</body>
-</html>
+<%@include file="footer.jspf"%>
