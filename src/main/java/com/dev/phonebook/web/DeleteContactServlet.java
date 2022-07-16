@@ -10,6 +10,10 @@ public class DeleteContactServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String input = request.getParameter("id");
+        if (input == null) {
+            response.sendRedirect("./");
+            return;
+        }
     }
 
     @Override
