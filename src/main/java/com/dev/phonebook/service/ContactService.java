@@ -98,5 +98,6 @@ public class ContactService {
             errors.put("userId", "Permission denied for deleting this contact");
             return;
         }
+        dao.deleteContact(id);
     }
 }
