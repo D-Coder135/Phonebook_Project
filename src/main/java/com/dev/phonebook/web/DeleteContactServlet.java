@@ -30,5 +30,6 @@ public class DeleteContactServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Integer id = Integer.valueOf(request.getParameter("id"));
+        String confirm = request.getParameter("confirm");
     }
 }
