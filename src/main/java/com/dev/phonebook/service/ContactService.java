@@ -91,6 +91,6 @@ public class ContactService {
     }
 
     public void deleteContactById(Integer id, Integer userId, Map<String, String> errors) {
-
+        ContactDao dao = DaoFactory.getContactDao();
     }
 }
