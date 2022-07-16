@@ -23,6 +23,8 @@ public class DeleteContactServlet extends HttpServlet {
         User user = (User) request.getSession().getAttribute("user");
 
         Contact c1 = new ContactService().getContactById(id, user.getId());
+        request.setAttribute("contact", c1);
+
     }
 
     @Override
