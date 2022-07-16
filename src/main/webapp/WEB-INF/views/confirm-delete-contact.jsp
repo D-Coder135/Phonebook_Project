@@ -11,4 +11,9 @@
 
 <h3 class="text-danger">Confirm Deletion</h3>
 <hr>
+
+<c:if test="${contact == null}">
+    <h5>The id supplied is either invalid or the contact does not belong to your phonebook!</h5>
+</c:if>
+
 <%@include file="footer.jspf"%>
