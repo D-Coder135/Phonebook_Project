@@ -5,7 +5,7 @@
 <html>
 <head>
     <title>Phonebook Application</title>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/bootstrap.yeti.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/bootstrap.${cookie.theme.value == null ? 'yeti' : cookie.theme.value}.min.css">
 </head>
 <body>
 <div class="alert alert-primary">
