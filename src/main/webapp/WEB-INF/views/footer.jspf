@@ -3,7 +3,11 @@
 <div class="container text-center">
 
     <div>
-
+        <a href="./theme?name=yeti">Yeti</a> |
+        <a href="./theme?name=united">United</a> |
+        <a href="./theme?name=pulse">Pulse</a> |
+        <a href="./theme?name=dark">Dark</a> |
+        <a href="./theme?name=cyborg">Cyborg</a>
     </div>
 
     &copy; 2022-2023 All rights reserved by <a href="https://d-coder135.github.io/Portfoilio_Project/">De_Coder135</a>
