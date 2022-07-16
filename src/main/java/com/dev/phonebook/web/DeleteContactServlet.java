@@ -24,7 +24,7 @@ public class DeleteContactServlet extends HttpServlet {
 
         Contact c1 = new ContactService().getContactById(id, user.getId());
         request.setAttribute("contact", c1);
-
+        request.getRequestDispatcher("/WEB-INF/views/confirm-delete-contact.jsp").forward(request, response);
     }
 
     @Override
